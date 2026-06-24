@@ -54,7 +54,7 @@ jobs:
           git switch -c "$branch"
           git add README.md README.zh-CN.md
           git commit -m "Add client from issue #${ISSUE_NUMBER}"
-          git push --force-with-lease origin "$branch"
+          git push --force origin "$branch"
 
           existing_pr="$(gh pr list --repo "$REPOSITORY" --head "${REPOSITORY_OWNER}:${branch}" --json number --jq '.[0].number // empty')"
           if [ -n "$existing_pr" ]; then
