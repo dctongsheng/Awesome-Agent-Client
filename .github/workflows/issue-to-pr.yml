@@ -1,0 +1,72 @@
+name: Issue to PR
+
+on:
+  issues:
+    types:
+      - labeled
+      - edited
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  create-pr:
+    if: startsWith(github.event.issue.title, 'Add:') && contains(github.event.issue.labels.*.name, 'ready-for-pr')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Apply issue entry
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python3 .github/scripts/apply_issue_entry.py
+
+      - name: Run checks
+        run: |
+          npx markdownlint-cli2 README.md README.zh-CN.md CONTRIBUTING.md
+          python3 .github/scripts/check_markdown_links.py README.md README.zh-CN.md
+
+      - name: Create pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          REPOSITORY: ${{ github.repository }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: |
+          if git diff --quiet -- README.md README.zh-CN.md; then
+            gh issue comment "$ISSUE_NUMBER" --repo "$REPOSITORY" --body "No README changes were needed. This client may already be listed."
+            exit 0
+          fi
+
+          branch="auto/add-client-${ISSUE_NUMBER}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add README.md README.zh-CN.md
+          git commit -m "Add client from issue #${ISSUE_NUMBER}"
+          git push --force-with-lease origin "$branch"
+
+          existing_pr="$(gh pr list --repo "$REPOSITORY" --head "${REPOSITORY_OWNER}:${branch}" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing_pr" ]; then
+            gh issue comment "$ISSUE_NUMBER" --repo "$REPOSITORY" --body "Updated existing pull request #${existing_pr}."
+            exit 0
+          fi
+
+          pr_url="$(gh pr create \
+            --repo "$REPOSITORY" \
+            --base main \
+            --head "$branch" \
+            --title "${ISSUE_TITLE}" \
+            --body "Closes #${ISSUE_NUMBER}")"
+
+          gh issue comment "$ISSUE_NUMBER" --repo "$REPOSITORY" --body "Opened automated pull request: ${pr_url}"

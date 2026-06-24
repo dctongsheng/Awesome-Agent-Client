@@ -68,6 +68,20 @@ git commit -m "Add client-name"
 
 1. Open a pull request and explain why the client is awesome.
 
+## Automated Issue-To-PR Flow
+
+Maintainers can also turn a completed "Add an agent client" issue into a pull
+request automatically:
+
+1. Make sure the issue includes `Category`, `English entry`, and `Chinese entry`.
+1. Review the official link and the "Why awesome" explanation.
+1. Add the `ready-for-pr` label to the issue.
+1. GitHub Actions will create a branch, update both READMEs, run the checks, and
+   open a pull request that closes the issue when merged.
+
+The automation intentionally waits for the `ready-for-pr` label so every
+suggestion still gets a maintainer review before a pull request is opened.
+
 ## Pull Request Checklist
 
 - The project has an official source link.

@@ -12,6 +12,19 @@
     206,
     403
   ],
+  "httpHeaders": [
+    {
+      "urls": [
+        "https://github.com",
+        "https://awesome.re"
+      ],
+      "headers": {
+        "User-Agent": "Awesome-Agent-Client-Link-Check"
+      }
+    }
+  ],
   "retryOn429": true,
-  "timeout": "20s"
+  "retryCount": 1,
+  "fallbackRetryDelay": "5s",
+  "timeout": "10s"
 }

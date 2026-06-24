@@ -33,12 +33,42 @@ body:
         - Protocol / ecosystem
     validations:
       required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Choose the README section where this client should be added.
+      options:
+        - General Desktop Agents
+        - Agentic IDEs and Workspaces
+        - Editor Extensions
+        - Terminal and TUI Agents
+        - Local-First and Open-Source Clients
+        - Related Standards and Ecosystem
+    validations:
+      required: true
   - type: input
     id: platforms
     attributes:
       label: Platforms
       description: List supported platforms.
       placeholder: "macOS, Windows, Linux"
+    validations:
+      required: true
+  - type: textarea
+    id: english-entry
+    attributes:
+      label: English entry
+      description: Paste the exact Markdown line to add to README.md.
+      placeholder: "- [Client Name](https://example.com) - One sentence description. Platforms: macOS, Windows, Linux. Type: Desktop / IDE / Extension / CLI. License: Open source / Proprietary / Freemium. Last checked: 2026-06-24."
+    validations:
+      required: true
+  - type: textarea
+    id: chinese-entry
+    attributes:
+      label: Chinese entry
+      description: Paste the exact Markdown line to add to README.zh-CN.md.
+      placeholder: "- [Client Name](https://example.com) - 一句话说明它是什么、为什么有用。Platforms: macOS, Windows, Linux. Type: Desktop / IDE / Extension / CLI. License: Open source / Proprietary / Freemium. Last checked: 2026-06-24."
     validations:
       required: true
   - type: textarea
