@@ -1,0 +1,58 @@
+name: Add an agent client
+description: Suggest a desktop, IDE, extension, CLI, TUI, or local agent client.
+title: "Add: "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Client name
+      description: The public name of the agent client.
+      placeholder: "Example: Codex CLI"
+    validations:
+      required: true
+  - type: input
+    id: official-link
+    attributes:
+      label: Official link
+      description: Use the official website, documentation page, or repository.
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: dropdown
+    id: client-type
+    attributes:
+      label: Client type
+      options:
+        - Desktop
+        - IDE / workspace
+        - Editor extension
+        - CLI / TUI
+        - Web / cloud control surface
+        - Protocol / ecosystem
+    validations:
+      required: true
+  - type: input
+    id: platforms
+    attributes:
+      label: Platforms
+      description: List supported platforms.
+      placeholder: "macOS, Windows, Linux"
+    validations:
+      required: true
+  - type: textarea
+    id: why-awesome
+    attributes:
+      label: Why awesome?
+      description: Explain the agentic capabilities and why it belongs here.
+      placeholder: "It can edit files, run commands, use MCP tools, and manage multi-step coding tasks."
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra notes
+      description: Add license/model info, install notes, or anything maintainers should verify.
+    validations:
+      required: false

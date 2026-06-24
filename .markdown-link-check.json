@@ -1,0 +1,17 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^https://chatgpt\\.com/"
+    },
+    {
+      "pattern": "^https://antigravity\\.google/"
+    }
+  ],
+  "aliveStatusCodes": [
+    200,
+    206,
+    403
+  ],
+  "retryOn429": true,
+  "timeout": "20s"
+}
