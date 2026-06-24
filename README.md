@@ -66,6 +66,7 @@ does not list pure agent frameworks unless they provide a usable client surface.
 - [Goose](https://goose-docs.ai/) - Native open-source AI agent with desktop app, CLI, API, MCP extensions, and support for many model providers. Platforms: macOS, Windows, Linux. Type: Desktop / CLI / API. License: Open source. Last checked: 2026-06-24.
 - [AnythingLLM Desktop](https://anythingllm.com/) - Local-first desktop AI application with RAG, custom tools, MCP support, and AI agent workflows. Platforms: macOS, Windows, Linux. Type: Desktop. License: Open source / Commercial. Last checked: 2026-06-24.
 - [OpenHands](https://www.openhands.dev/) - Open-source software engineering agent platform with web UI, CLI, and developer control surfaces. Platforms: Web, CLI, self-hosted. Type: Web / CLI / Agent canvas. License: Open source / Commercial. Last checked: 2026-06-24.
+- [Hermes Agent](https://hermes-agent.nousresearch.com/) - Open-source self-improving AI agent by Nous Research with desktop and CLI access, persistent memory, tool use, and skill learning from experience. Platforms: macOS, Windows, Linux. Type: Desktop / CLI / Agent runtime. License: Open source / MIT. Last checked: 2026-06-24.
 
 ## Related Standards and Ecosystem
 
