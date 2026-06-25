@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply an agent-client issue suggestion to both README files."""
+"""Apply an agent-client issue suggestion to both localized README files."""
 
 from __future__ import annotations
 
@@ -10,8 +10,8 @@ import sys
 from pathlib import Path
 
 
-README_EN = Path("README.md")
-README_ZH = Path("README.zh-CN.md")
+README_EN = Path("README.en.md")
+README_ZH = Path("README.md")
 
 CATEGORY_HEADINGS_ZH = {
     "General Desktop Agents": "通用桌面 Agent",
@@ -138,15 +138,15 @@ def main() -> int:
 
     if args.dry_run:
         print(f"Validated issue entry for category: {category}")
-        print(f"README.md changed: {changed_en}")
-        print(f"README.zh-CN.md changed: {changed_zh}")
+        print(f"README.en.md changed: {changed_en}")
+        print(f"README.md changed: {changed_zh}")
         return 0
 
     README_EN.write_text(new_en, encoding="utf-8")
     README_ZH.write_text(new_zh, encoding="utf-8")
     print(f"Applied issue entry to category: {category}")
-    print(f"README.md changed: {changed_en}")
-    print(f"README.zh-CN.md changed: {changed_zh}")
+    print(f"README.en.md changed: {changed_en}")
+    print(f"README.md changed: {changed_zh}")
     return 0
 
 

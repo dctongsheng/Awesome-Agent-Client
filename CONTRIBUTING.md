@@ -48,15 +48,15 @@ a period before the metadata fields.
 git checkout -b add-client-name
 ```
 
-1. Add or update the entry in both `README.md` and `README.zh-CN.md`.
+1. Add or update the entry in both `README.md` and `README.en.md`.
 1. Keep entries alphabetically sensible within a category when practical, but
    prioritize category fit over strict sorting.
 1. Run the checks:
 
 ```bash
-npx markdownlint-cli2 README.md README.zh-CN.md CONTRIBUTING.md
+npx markdownlint-cli2 README.md README.en.md CONTRIBUTING.md
 npx markdown-link-check -c .markdown-link-check.json README.md
-npx markdown-link-check -c .markdown-link-check.json README.zh-CN.md
+npx markdown-link-check -c .markdown-link-check.json README.en.md
 ```
 
 1. Commit with a clear message:
