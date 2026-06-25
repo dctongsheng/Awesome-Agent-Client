@@ -32,8 +32,8 @@ jobs:
 
       - name: Run checks
         run: |
-          npx markdownlint-cli2 README.md README.zh-CN.md CONTRIBUTING.md
-          python3 .github/scripts/check_markdown_links.py README.md README.zh-CN.md
+          npx markdownlint-cli2 README.md README.en.md CONTRIBUTING.md
+          python3 .github/scripts/check_markdown_links.py README.md README.en.md
 
       - name: Create pull request
         env:
@@ -43,7 +43,7 @@ jobs:
           REPOSITORY: ${{ github.repository }}
           REPOSITORY_OWNER: ${{ github.repository_owner }}
         run: |
-          if git diff --quiet -- README.md README.zh-CN.md; then
+          if git diff --quiet -- README.md README.en.md; then
             gh issue comment "$ISSUE_NUMBER" --repo "$REPOSITORY" --body "No README changes were needed. This client may already be listed."
             exit 0
           fi
@@ -52,7 +52,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
-          git add README.md README.zh-CN.md
+          git add README.md README.en.md
           git commit -m "Add client from issue #${ISSUE_NUMBER}"
           git push --force origin "$branch"
 
