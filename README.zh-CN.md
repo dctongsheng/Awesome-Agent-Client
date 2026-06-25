@@ -60,6 +60,7 @@
 - [Goose](https://goose-docs.ai/) - 原生开源 AI Agent，提供桌面应用、CLI、API、MCP 扩展和多模型提供商支持。Platforms: macOS, Windows, Linux. Type: Desktop / CLI / API. License: Open source. Last checked: 2026-06-24.
 - [AnythingLLM Desktop](https://anythingllm.com/) - 本地优先桌面 AI 应用，支持 RAG、自定义工具、MCP 和 AI Agent 工作流。Platforms: macOS, Windows, Linux. Type: Desktop. License: Open source / Commercial. Last checked: 2026-06-24.
 - [OpenHands](https://www.openhands.dev/) - 开源软件工程 Agent 平台，提供 Web UI、CLI 和开发者控制界面。Platforms: Web, CLI, self-hosted. Type: Web / CLI / Agent canvas. License: Open source / Commercial. Last checked: 2026-06-24.
+- [Hermes Agent](https://hermes-agent.nousresearch.com/) - Nous Research 构建的开源自进化 AI Agent，提供桌面和 CLI 入口，支持持久记忆、工具调用和从经验中学习技能。Platforms: macOS, Windows, Linux. Type: Desktop / CLI / Agent runtime. License: Open source / MIT. Last checked: 2026-06-24.
 
 ## 相关标准与生态
 
