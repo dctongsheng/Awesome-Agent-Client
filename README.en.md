@@ -60,6 +60,7 @@ does not list pure agent frameworks unless they provide a usable client surface.
 - [Aider](https://github.com/aider-ai/aider) - Terminal pair-programming agent that edits files in your local Git repository and automatically commits changes. Platforms: macOS, Windows, Linux. Type: CLI. License: Open source. Last checked: 2026-06-24.
 - [Cursor CLI](https://cursor.com/cli) - Cursor's terminal agent for scripts, automations, MCP workflows, and headless coding tasks. Platforms: macOS, Windows, Linux. Type: CLI. License: Proprietary / Freemium. Last checked: 2026-06-24.
 - [Amp](https://ampcode.com/) - Coding agent with terminal, editor, JetBrains, and remote-control surfaces for multi-step software work. Platforms: macOS, Linux, Windows via WSL. Type: CLI / Extension / Remote agent. License: Proprietary / Pay-as-you-go. Last checked: 2026-06-24.
+- [DimAgent](https://dimcode.dev/en/) - Local-first AI coding agent runtime with terminal, desktop, and editor surfaces, plus MCP, plugins, skills, subagents, and local project storage. Platforms: macOS, Linux, Windows. Type: CLI / TUI / Desktop / Editor integration. License: Proprietary / Freemium. Last checked: 2026-06-27.
 
 ## Local-First and Open-Source Clients
 

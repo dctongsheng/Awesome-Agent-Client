@@ -54,6 +54,7 @@
 - [Aider](https://github.com/aider-ai/aider) - 终端结对编程 Agent，可在本地 Git 仓库中修改文件并自动提交变更。Platforms: macOS, Windows, Linux. Type: CLI. License: Open source. Last checked: 2026-06-24.
 - [Cursor CLI](https://cursor.com/cli) - Cursor 的终端 Agent，用于脚本、自动化、MCP 工作流和 headless 编程任务。Platforms: macOS, Windows, Linux. Type: CLI. License: Proprietary / Freemium. Last checked: 2026-06-24.
 - [Amp](https://ampcode.com/) - 编程 Agent，提供终端、编辑器、JetBrains 和远程控制形态，适合多步骤软件开发任务。Platforms: macOS, Linux, Windows via WSL. Type: CLI / Extension / Remote agent. License: Proprietary / Pay-as-you-go. Last checked: 2026-06-24.
+- [DimAgent](https://dimcode.dev/en/) - 本地优先的 AI 编程 Agent runtime，提供终端、桌面和编辑器入口，支持 MCP、插件、技能、子 Agent 和本地项目存储。Platforms: macOS, Linux, Windows. Type: CLI / TUI / Desktop / Editor integration. License: Proprietary / Freemium. Last checked: 2026-06-27.
 
 ## 本地优先与开源客户端
 
