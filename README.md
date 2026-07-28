@@ -49,6 +49,7 @@
 
 - [OpenAI Codex CLI](https://github.com/openai/codex) - OpenAI 的开源本地终端编程 Agent，可读取、修改并运行代码。Platforms: macOS, Linux, Windows. Type: CLI. License: Open source. Last checked: 2026-06-24.
 - [Claude Code](https://claude.com/product/claude-code) - Anthropic 的 Agentic 编程工具，覆盖终端、IDE、桌面应用、浏览器和 GitHub 工作流。Platforms: macOS, Linux, Windows. Type: CLI / IDE / Desktop. License: Proprietary / Commercial. Last checked: 2026-06-24.
+- [ARCC](https://github.com/niyongsheng/arcc) - Rust 构建本地优先 AI 智能体，支持 MCP/ACP 协议，提供 CLI/TUI/Server 三种运行模式，兼容 DeepSeek/Claude/OpenAI，内置安全引擎与 SQLite 持久化。Platforms: macOS, Linux, Windows. Type: CLI / TUI / Server. License: MIT.
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - Google 的开源终端 AI Agent，用于编码、问题解决和工具调用。Platforms: macOS, Windows, Linux. Type: CLI. License: Open source. Last checked: 2026-06-24.
 - [OpenCode](https://opencode.ai/) - 开源 AI 编程 Agent，提供终端界面、桌面应用和 IDE 扩展。Platforms: macOS, Windows, Linux. Type: TUI / Desktop / Extension. License: Open source. Last checked: 2026-06-24.
 - [Aider](https://github.com/aider-ai/aider) - 终端结对编程 Agent，可在本地 Git 仓库中修改文件并自动提交变更。Platforms: macOS, Windows, Linux. Type: CLI. License: Open source. Last checked: 2026-06-24.
