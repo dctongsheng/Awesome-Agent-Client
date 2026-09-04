@@ -62,6 +62,7 @@
 - [AnythingLLM Desktop](https://anythingllm.com/) - 本地优先桌面 AI 应用，支持 RAG、自定义工具、MCP 和 AI Agent 工作流。Platforms: macOS, Windows, Linux. Type: Desktop. License: Open source / Commercial. Last checked: 2026-06-24.
 - [OpenHands](https://www.openhands.dev/) - 开源软件工程 Agent 平台，提供 Web UI、CLI 和开发者控制界面。Platforms: Web, CLI, self-hosted. Type: Web / CLI / Agent canvas. License: Open source / Commercial. Last checked: 2026-06-24.
 - [Hermes Agent](https://hermes-agent.nousresearch.com/) - Nous Research 构建的开源自进化 AI Agent，提供桌面和 CLI 入口，支持持久记忆、工具调用和从经验中学习技能。Platforms: macOS, Windows, Linux. Type: Desktop / CLI / Agent runtime. License: Open source / MIT. Last checked: 2026-06-24.
+- [Superagent](https://github.com/pungme/superagent-desktop) - macOS 桌面应用，为 Claude Code 和 Codex 提供可操作的真实浏览器、可安装和截图应用的 iOS Simulator，以及用于远程监控的手机伴侣应用。Platforms: macOS. Type: Desktop. License: Open source / MIT. Last checked: 2026-09-04.
 
 ## 相关标准与生态
 
