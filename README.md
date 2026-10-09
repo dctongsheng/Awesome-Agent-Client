@@ -28,6 +28,7 @@
 
 - [ChatGPT Desktop](https://chatgpt.com/features/desktop/) - ChatGPT 桌面客户端，支持文件、截图、语音和桌面快捷入口。Platforms: macOS, Windows. Type: Desktop. License: Proprietary / Freemium. Last checked: 2026-06-24.
 - [Claude Desktop](https://claude.com/download) - Claude 桌面客户端，支持聊天、桌面扩展以及 Claude 的 Agent 产品入口。Platforms: macOS, Windows. Type: Desktop. License: Proprietary / Freemium. Last checked: 2026-06-24.
+- [Screenpipe](https://screenpipe.com) - 桌面应用，可基于可搜索的屏幕文本和音频历史运行定时 AI 工作流，生成会议笔记和工作总结。Platforms: macOS, Windows. Type: Desktop. License: Source-available / Screenpipe Commercial License; official builds have separate terms. Last checked: 2026-10-08.
 
 ## Agentic IDE 与工作区
 

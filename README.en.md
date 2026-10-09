@@ -34,6 +34,7 @@ does not list pure agent frameworks unless they provide a usable client surface.
 
 - [ChatGPT Desktop](https://chatgpt.com/features/desktop/) - Desktop ChatGPT client for using ChatGPT with files, screenshots, voice, and desktop shortcuts. Platforms: macOS, Windows. Type: Desktop. License: Proprietary / Freemium. Last checked: 2026-06-24.
 - [Claude Desktop](https://claude.com/download) - Desktop Claude client with chat, desktop extensions, and access to Claude's agentic product surfaces. Platforms: macOS, Windows. Type: Desktop. License: Proprietary / Freemium. Last checked: 2026-06-24.
+- [Screenpipe](https://screenpipe.com) - Desktop app that runs scheduled AI workflows over searchable screen text and audio history for meeting notes and work summaries. Platforms: macOS, Windows. Type: Desktop. License: Source-available / Screenpipe Commercial License; official builds have separate terms. Last checked: 2026-10-08.
 
 ## Agentic IDEs and Workspaces
 
